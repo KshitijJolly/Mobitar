@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ankit.jolly.mobitar.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:>
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="51dp"
+            android:layout_height="50dp"
+            app:srcCompat="@color/colorPrimary"
+            tools:layout_editor_absoluteX="317dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            app:srcCompat="@color/colorPrimary"
+            tools:layout_editor_absoluteX="317dp"
+            tools:layout_editor_absoluteY="66dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="52dp"
+            android:layout_height="51dp"
+            app:srcCompat="@color/colorPrimary"
+            tools:layout_editor_absoluteX="316dp"
+            tools:layout_editor_absoluteY="115dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="54dp"
+            android:layout_height="49dp"
+            app:srcCompat="@color/colorPrimary"
+            tools:layout_editor_absoluteX="314dp"
+            tools:layout_editor_absoluteY="166dp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="349dp"
+            android:layout_height="208dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="342dp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
