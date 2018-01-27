@@ -8,6 +8,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
@@ -53,5 +54,30 @@ public class MainActivity extends Activity {
                     break;
             }
         return super.onTouchEvent(event);
+    }
+
+    public void onRadioButtonClicked(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch(view.getId()) {
+            case R.id.chordA:
+                if (checked)
+                    Toast.makeText(getApplicationContext(),"1st",Toast.LENGTH_SHORT).show();
+                    break;
+            case R.id.chordB:
+                if (checked)
+                    Toast.makeText(getApplicationContext(),"2nd",Toast.LENGTH_SHORT).show();
+                    break;
+            case R.id.chordC:
+                if (checked)
+                    Toast.makeText(getApplicationContext(),"3rd",Toast.LENGTH_SHORT).show();
+                    break;
+            case R.id.chordD:
+                if (checked)
+                    Toast.makeText(getApplicationContext(),"4th",Toast.LENGTH_SHORT).show();
+                    break;
+        }
     }
 }
